@@ -1,21 +1,21 @@
 body {
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #303030;
   margin:0;
   padding:0;
 }
 /*clases reutilizables*/
-.text-uppercase {
+.text-capitalize {
   text-transform: capitalize;
+}
+.text-uppercase{
+  text-transform: uppercase;
 }
 .box-header {
   display: inline-block;
 }
-/*clases especificas*/
-.logo-header {
-  width: 200px;
-}
+
 li {
   display: inline;
   list-style: none;
@@ -26,11 +26,14 @@ li {
   padding-right: 24px;
 }
 header {
-  position: relative;
+  position: fixed;
   background-image: url(../assets/images/hero.gif);
   background-size: cover;
   height: 112px;
   width: 100%;
+}
+header.et-fixed-header{
+  background-color: #fff;
 }
 nav {
   position: absolute;
@@ -42,18 +45,96 @@ nav {
 section {
   text-align: center;
 }
-div {
-  width: 33%;
-  display: inline-block;
-}
-span{
-  font-size: 60px;
-}
-body section:last-child {
-  margin: 30px 50px 0 70px;
-}
+
 img[alt="lyft"]{
   width: 70px;
   height: 40px;
   margin-top: 20px;
+}
+/*seccion lya*/
+section{
+  width: 100%;
+  height: 525px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  background-image: url(../assets/images/hero.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.box-turn{
+  width: 560px;
+  height:525px;
+  top: 112px;
+  background-color: #fff;
+  float: right;
+}
+.container-turn{
+  width: 560px;
+  height: 419px;
+  margin-top: 182px;
+  margin-left: 64px;
+}
+.title{
+  color: #352384;
+  font-weight: 700;
+  line-height: 1.1;
+  font-size: 2rem;
+  text-align: left;
+}
+.sub-title{
+  color: #352384;
+  font-weight: 500;
+  line-height: 1.1;
+  font-size: 1rem;
+  text-align: left;
+  margin-top: 19px;
+}
+.content-form{
+  margin-top: 20px;
+  color: #728099;
+  text-align: left;
+}
+.container-button{
+  text-align: left;
+  display: inline-block;
+  margin-right:90px;
+}
+.text-fuchsia{
+  color:#FF00BF;
+}
+.sign{
+  display: inline-block;
+}
+h1 ,h2{
+  margin: 4px;
+}
+.button-form{
+  display: inline-block;
+  width: 184px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 6px;
+  background-color: #FF00BF;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+.container-button a{
+  margin: 10px;
+}
+hr{
+  display: inline-block;
+  width: 447px;
+  text-align: left;
+}
+input{
+  width: 447px;
+  border:  none;
+  text-align: left;
+}
+.container-input{
+  margin-top: 20px;
+  text-align: left;
 }
