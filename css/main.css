@@ -157,3 +157,7 @@ img[alt="phone"]{
   width: 450px;
  float: right;
 }
+.container-ride{
+  padding-left: 40px;
+  margin-top: 40px;
+}
