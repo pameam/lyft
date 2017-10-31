@@ -1,3 +1,59 @@
-/*
- * Estilos de tu proyecto
- */
+body {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  color: #303030;
+  margin:0;
+  padding:0;
+}
+/*clases reutilizables*/
+.text-uppercase {
+  text-transform: capitalize;
+}
+.box-header {
+  display: inline-block;
+}
+/*clases especificas*/
+.logo-header {
+  width: 200px;
+}
+li {
+  display: inline;
+  list-style: none;
+}
+ header li a{
+  color: inherit;
+  text-decoration: none;
+  padding-right: 24px;
+}
+header {
+  position: relative;
+  background-image: url(../assets/images/hero.gif);
+  background-size: cover;
+  height: 112px;
+  width: 100%;
+}
+nav {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+section {
+  text-align: center;
+}
+div {
+  width: 33%;
+  display: inline-block;
+}
+span{
+  font-size: 60px;
+}
+body section:last-child {
+  margin: 30px 50px 0 70px;
+}
+img[alt="lyft"]{
+  width: 70px;
+  height: 40px;
+  margin-top: 20px;
+}
